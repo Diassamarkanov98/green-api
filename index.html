@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="request">
+        <div class="instance">
+            <div class="instance_inputs">
+                <input type="text" placeholder="idInstance" id="idInstance" required>
+                <input type="text" placeholder="ApiTokenInstance" id="apiTokenInstance" required>
+            </div>
+            <div class="container_button">
+                <button class="button" id="getSettings">getSettings</button>
+                <button class="button" id="getStateInstance">getStateInstance</button>
+            </div>
+        </div>
+        <div class="send_message">
+            <div class="send_message_inputs">
+                <input type="text" placeholder="numberToSendMessage" id="numberSendMessage">
+                <textarea type="text" placeholder="textMessage" id="textMessage"></textarea>
+            </div>
+            <div class="container_button">
+                <button class="button" id="buttonSendMessage">sendMessage</button>
+            </div>
+        </div>
+        <div class="send_file_by_url">
+            <div class="send_file_by_url_inputs">
+                <input type="text" placeholder="numberToSendFile" id="numberToSendFile">
+                <input type="text" placeholder="fileUrl" id="fileUrl">
+            </div>
+            <div class="container_button">
+                <button class="button" id="buttonToSendFile">sendFileByUrl</button>
+            </div>
+        </div>
+    </section>
+    <section class="output">
+        <h2>Ответ:</h2>
+        <div class="output_answer_border">
+            <span id="phone-output"></span>
+        </div>
+    </section>
+    
+</body>
+<script src="./script.js"></script>
+</html>
